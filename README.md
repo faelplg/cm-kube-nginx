@@ -26,8 +26,13 @@ Resolução:
 * [Repositório do GitHub](https://github.com/faelplg/cm-kube-mysql)
 
 Resolução:
-* A
-* B
+* Criação do `deployment.yaml`;
+  * Configuração simples especificando um container com `mysql:5.7`;
+* Criação do `persistent-volume.yaml` para especificar um PersistentVolumeClaim, no qual será definido um volume persistente para o DB;
+* Criação do volume persistente dentro do `deployment.yaml`;
+* Montagem desse volume na pasta `/var/lib/mysql`;
+* Atribuição de um secret por linha de comando (`kube-mysql-secret`) para esconder password do DB;
+* Criação do serviço para expor o MySQL;
 
 #### Tarefa 3: Desafio Go!
 * Nome do artefato: `cm-kube-go`
