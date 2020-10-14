@@ -37,7 +37,13 @@ Resolução:
 #### Tarefa 3: Desafio Go!
 * Nome do artefato: `cm-kube-go`
 * [Repositório do GitHub](https://github.com/faelplg/cm-kube-go)
+* [Imagem no Docker Hub](https://hub.docker.com/r/faelplg/cm-kube-go)
 
 Resolução:
-* A
-* B
+* Criação do programa em GO;
+* Criação do teste do programa;
+* Criação do `Dockerfile` e `cloudbuild.yaml` para processo de CI;
+  * A imagem da aplicação é criada com um _build_ do programa copiado para uma imagem `scratch`;
+* Publicação da imagem no Docker Hub;
+* Criação de um `deployment.yaml` com a imagem publicada;
+* Criação de um serviço expondo a aplicação para acesso via browser;
